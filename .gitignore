@@ -1,0 +1,182 @@
+# ============================================================
+#  《程序设计基础》个人作品集仓库 - Git 忽略规则
+#  说明：写在这里的文件/文件夹不会被 Git 追踪、也不会被提交到 GitHub
+#  规则语法：# 开头是注释，glob 通配符 * 表示任意字符，/ 表示目录
+# ============================================================
+
+# ---------- 操作系统产物 ----------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~
+.directory
+
+# ---------- 编辑器 / IDE ----------
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+.idea/
+*.iml
+*.ipr
+*.iws
+out/
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+*.swp
+*.swo
+*~
+
+# 笔记 / 临时文件
+*.tmp
+*.bak
+*.log
+*.orig
+*.rej
+
+# ---------- Python ----------
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+.venv/
+venv/
+ENV/
+env/
+.python-version
+.ipynb_checkpoints/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.tox/
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter / 数据科学
+.ipynb_checkpoints
+*.h5
+*.pkl
+!requirements.txt
+
+# ---------- C / C++ ----------
+*.o
+*.obj
+*.ko
+*.elf
+*.ilk
+*.pdb
+*.idb
+*.pch
+*.d
+*.exe
+*.out
+*.app
+*.dSYM/
+*.su
+*.ncb
+*.sdf
+*.opensdf
+*.opendb
+*.VC.db
+*.VC.VC.opendb
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+build/
+
+# ---------- Java ----------
+*.class
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+target/
+.mvn/
+!.mvn/wrapper/maven-wrapper.jar
+.gradle/
+build/
+bin/
+
+# ---------- Node / 前端 ----------
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+.pnpm-store/
+coverage/
+.cache/
+.parcel-cache/
+dist/
+dist-ssr/
+*.local
+.env
+.env.*
+!.env.example
+*.tsbuildinfo
+npm-debug.log*
+yarn.lock
+
+# ---------- 数据库 / 缓存 ----------
+*.sqlite3
+*.sqlite
+*.db
+*.mdb
+.redis/
+
+# ---------- 文档 / 压缩包（实验报告原件不建议入库） ----------
+# 如需提交 Word/PPT 报告，请注释掉下面几行
+# ~$*.docx
+# ~$*.pptx
+# ~$*.xlsx
+*.zip
+*.rar
+*.7z
+
+# ---------- 密钥 / 隐私（务必不要提交！） ----------
+.env
+.env.local
+*.pem
+*.key
+*.p12
+*.pfx
+secrets.json
+credentials.json
+id_rsa*
